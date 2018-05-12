@@ -3,7 +3,7 @@ const Bot = new Discord.Client();
 const prefix = "v!";
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
-Bot.login("NDQ0NTc4MDcwMzczMDcyODk3.Ddd9Qg.mv8ZclCOxlwXgLiRqVg_subkxXw");
+Bot.login(process.env.BOT_TOKEN);
 
 Bot.on('ready', () => {
     Bot.user.setActivity('Интересную игру: ' + prefix + 'help', {type: "PLAYING"});
